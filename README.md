@@ -19,8 +19,11 @@ City Info API challenge
 );
 
 3. Inside of your application.yml file replace the placeholders ${} with your actual config values:
+   
     url: jdbc:postgresql://localhost:5432/${Database_Name}
+
     username: ${Database_Username}
+
     password: ${Database_Password}
 
-4. After running the application you can use Postman (or similar) in order to test the endpoints.
+5. After running the application you can use Postman (or similar) in order to test the endpoints.
