@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${Database_Name}
+    username: ${Database_Username}
+    password: ${Database_Password}
+    driver-class-name: org.postgresql.Driver
+  openweather:
+    api:
+      key: e191ad4ec6a24a812fe749f0ef29fe00
+      url: "http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric"
