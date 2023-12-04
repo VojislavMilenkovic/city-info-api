@@ -26,4 +26,17 @@ City Info API challenge
 
     password: ${Database_Password}
 
-5. After running the application you can use Postman (or similar) in order to test the endpoints.
+4. After running the application you can use Postman (or similar) in order to test the endpoints.
+
+5. To Create User in the db run the following SQL query:
+      drop table cityapi.users;
+
+      CREATE TABLE cityapi.users (
+	      id SERIAL PRIMARY KEY,
+         username VARCHAR(20) NOT NULL,
+         password VARCHAR(20) NOT NULL
+      );
+
+6. When you inserting user, password must be encrypted. For encription you can use https://bcrypt-generator.com/.
+
+7. Use /api/auth/login to generate token.
